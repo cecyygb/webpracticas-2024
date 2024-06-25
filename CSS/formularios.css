@@ -1,0 +1,111 @@
+/* Documento CSS */
+
+* { margin: 0px;
+    padding: 0px; }
+
+
+
+/*TIPOGRAFÍA*/
+
+@font-face {
+    font-family: 'barsuk20bregular';
+    src: url('/fonts/b20sans-webfont.woff') format('woff2'),
+         url('/fonts/b20sans-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { font-family: 'barsuk20bregular'; }
+
+h2 { text-align: center;
+     width: 250px;
+     margin:  15px auto 20px auto;
+     padding: 15px;
+     border: 2px solid rgb(93, 0, 255);
+     border-radius: 100px;
+     text-transform: uppercase; }
+
+h1 { padding-bottom: 15px;
+     font-size: 2.5em; }
+
+/*MAQUETACIÓN O LAYOUT*/
+
+.cabecera { width: 100%;
+            padding: 20px 0px; }
+
+.container { width: 100%;
+             display: flex;
+             flex-wrap: wrap;
+             padding: 0px 15px;
+             box-sizing: border-box; }
+
+.item { width: 100%;
+        margin-bottom: 16px;
+         }
+
+.item span { font-size: 0.9em; }
+
+.item input { width: 100%;
+              height: 40px;
+              margin-bottom: 15px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              border: 1px solid rgb(93, 0, 255); }
+
+.item input::placeholder { font-style: italic;
+                           color: black;
+                           text-decoration: underline; }
+
+.item textarea { max-width: 100%;
+                 min-width: 100%;
+                 height: 200px !important;
+                 border-radius: 8px;
+                 border: 1px solid rgb(93, 0, 255); }
+
+
+.btn:active { background-color: rgb(0, 145, 255);
+              color:whitesmoke; }
+
+.btn:hover { background: rgb(248,254,240);
+             background: linear-gradient(132deg, rgb(0, 80, 165) 0%, rgb(185, 128, 255) 97%); }
+
+/*MEDIA QUERIES codigos para pantallas de 600px en adelante Movile first*/
+@media only screen and (min-width:588px) { 
+
+     h1 { font-size: 4.3em; }
+     .item p { font-size: 2em;
+               margin-bottom: 25px; }
+     
+     }
+
+/*Pantallas mayores a 992*/     
+@media only screen and (min-width:992px) { 
+
+          h1 { font-size: 3.5em; }
+          .item p { font-size: 1.8em;
+                }
+
+          body { background-color: #c8a9ff; }
+          .formulario { width: 50%; 
+                        margin: auto;}
+
+          }
+
+/*Pantallas mayores a 1280*/     
+@media only screen and (min-width:1280px) { 
+
+     h1 { font-size: 2.4em;
+          padding-bottom: 30px; }
+
+     .item p { font-size: 1.5em;
+           }
+
+     .container  { 
+                   width: 80%;
+                   margin: auto; } 
+
+     .item { width: 50% !important; }
+
+}
+          

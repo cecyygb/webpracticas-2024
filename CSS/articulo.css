@@ -1,0 +1,62 @@
+/*documento css*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(22, 131, 241);
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(255, 174, 107);
+    padding: 20px;
+}
+
+
+ul, ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.derechos {color: #ffffff;}
+
+.parrafo {color: rgb(255, 255, 255);}
